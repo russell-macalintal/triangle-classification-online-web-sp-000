@@ -9,7 +9,13 @@ class Triangle
   end
 
   def kind
-
+    if self.s1 == self.s2 && self.s1 == self.s3
+      :equilateral
+    elsif self.s1 == self.s2 || self.s1 == self.s3 || self.s2 == self.s3
+      :isosceles
+    else
+      :scalene
+    end
   end
 
   class TriangleError < StandardError
