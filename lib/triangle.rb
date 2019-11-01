@@ -13,7 +13,7 @@ class Triangle
       raise TriangleError
     end
 
-    if (self.s1+self.s2 < self.s3) || (self.s1+self.s3 < self.s2) || (self.s2+self.s3 < self.s1)
+    if (self.s1+self.s2 <= self.s3) || (self.s1+self.s3 <= self.s2) || (self.s2+self.s3 <= self.s1)
       raise TriangleError
     end
 
